@@ -1,0 +1,69 @@
+[
+
+    {
+
+        "id": 1,
+        "precio": 20000,
+        "nombre": "Echeveria elegans",
+        "tamaño": "Grande",
+        "tierra": "Sustrato normal",
+        "foto": "http://127.0.0.1:5500/multimedia/catalogo_echeveria.jpg"
+
+    },
+
+    {
+
+        "id": 2,
+        "precio": 35000,
+        "nombre": "Cactus Chin",
+        "tamaño":"Mediana",
+        "tierra": "Sustrato normal",
+        "foto": "http://127.0.0.1:5500/multimedia/catalogo_echeveria.jpg"
+
+    },
+
+    {
+
+        "id": 3,
+        "precio": 30000,
+        "nombre": "Minijardin",
+        "tamaño":"Grande",
+        "tierra": "Sustrato normal",
+        "foto": "http://127.0.0.1:5500/multimedia/catalogo_minijardin.jpg"
+
+    },
+
+    {
+
+        "id": 4,
+        "precio": 28000,
+        "nombre": "Drosera",
+        "tamaño":"Pequeña",
+        "tierra": "Sustrato normal",
+        "foto": "http://127.0.0.1:5500/multimedia/catalogo_drosera.jpg"
+
+    },
+
+    {
+
+        "id": 5,
+        "precio": 12000,
+        "nombre": "Suculenta Pachyveria",
+        "tamaño":"Mediana",
+        "tierra": "Sustrato normal",
+        "foto": "http://127.0.0.1:5500/multimedia/catalogo_pachyveria.jpg"
+
+    },
+
+    {
+
+        "id": 6,    
+        "precio": 45000,
+        "nombre": "Carnivota mata moscas",
+        "tamaño":"Pequeña",
+        "tierra": "Sustrato Peatmoss",
+        "foto": "http://127.0.0.1:5500/multimedia/catalogo_carnivora.jpg"
+
+    }
+
+]

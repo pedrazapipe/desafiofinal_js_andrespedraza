@@ -1,0 +1,23 @@
+@font-face {
+    
+    font-family: gothic;
+    src: url(../tipografia/century_gothic.ttf);
+
+}
+
+html {
+
+    font-size: 62.5%;
+    background-color: #FE929D;
+
+}
+
+* {
+
+    font-family: gothic;
+    margin: 0;
+    padding: 0rem;
+    box-sizing: border-box;
+
+
+}

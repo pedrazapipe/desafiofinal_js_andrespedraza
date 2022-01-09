@@ -1,0 +1,693 @@
+@charset "UTF-8";
+/* Imports */
+/* Globals */
+@font-face {
+  font-family: gothic;
+  src: url(../tipografia/century_gothic.ttf); }
+
+html {
+  font-size: 62.5%;
+  background-color: #FE929D; }
+
+* {
+  font-family: gothic;
+  margin: 0;
+  padding: 0rem;
+  box-sizing: border-box; }
+
+/* Partials */
+/* Inicio header */
+.header__plantas {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin: 1rem;
+  margin-bottom: 5rem; }
+  .header__plantas .header__logo img {
+    height: 150px; }
+  .header__plantas .header__navegacion {
+    display: flex;
+    align-items: center; }
+    .header__plantas .header__navegacion ul {
+      list-style-type: none; }
+    .header__plantas .header__navegacion li {
+      display: inline;
+      margin: 2rem; }
+    .header__plantas .header__navegacion a {
+      text-decoration: none;
+      border-radius: 1%;
+      font-size: 2.5em;
+      padding: 3rem; }
+    .header__plantas .header__navegacion .header__somos {
+      color: black;
+      background-color: #64C0B5;
+      border-radius: 20px; }
+    .header__plantas .header__navegacion .header__catalogo {
+      color: black;
+      background-color: #EE7978;
+      border-radius: 20px; }
+    .header__plantas .header__navegacion .header__carrito {
+      color: black;
+      background-color: #F5D3CA;
+      border-radius: 20px; }
+  .header__plantas .header__redes a img {
+    height: 35px;
+    width: 35px;
+    margin-left: 2rem; }
+
+@media only screen and (max-width: 1024px) {
+  .header__plantas {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin: 1rem;
+    margin-bottom: 5rem; }
+    .header__plantas .header__logo img {
+      height: 120px; }
+    .header__plantas .header__navegacion {
+      display: flex;
+      align-items: center; }
+      .header__plantas .header__navegacion ul {
+        list-style-type: none; }
+      .header__plantas .header__navegacion li {
+        display: inline;
+        margin: 0.5rem; }
+      .header__plantas .header__navegacion a {
+        text-decoration: none;
+        border-radius: 20px;
+        font-size: 2em;
+        padding: 2rem; }
+      .header__plantas .header__navegacion .header__somos {
+        color: black;
+        background-color: #64C0B5;
+        border-radius: 20px; }
+      .header__plantas .header__navegacion .header__catalogo {
+        color: black;
+        background-color: #EE7978;
+        border-radius: 20px; }
+      .header__plantas .header__navegacion .header__carrito {
+        color: black;
+        background-color: #F5D3CA;
+        border-radius: 20px; }
+    .header__plantas .header__redes a img {
+      height: 30px;
+      width: 30px;
+      margin-left: 2rem; } }
+
+.footer__plantas {
+  display: flex;
+  justify-content: space-around; }
+  .footer__plantas .footer__info {
+    background-color: #EE7978;
+    border-radius: 20px;
+    margin: 1rem; }
+    .footer__plantas .footer__info h2 {
+      margin: 1rem;
+      font-size: 2.5em; }
+    .footer__plantas .footer__info ul {
+      list-style-type: none;
+      text-align: center; }
+      .footer__plantas .footer__info ul li {
+        margin: 0.5rem;
+        font-size: 2em; }
+  .footer__plantas .footer__contacto {
+    background-color: #F5D3CA;
+    border-radius: 20px;
+    margin: 1rem; }
+    .footer__plantas .footer__contacto h2 {
+      margin: 1rem;
+      font-size: 2.5em; }
+    .footer__plantas .footer__contacto ul {
+      list-style-type: none;
+      text-align: center; }
+      .footer__plantas .footer__contacto ul li {
+        margin: 0.5rem;
+        font-size: 2em; }
+  .footer__plantas .footer__pagos {
+    background-color: #64C0B5;
+    border-radius: 20px;
+    margin: 1rem; }
+    .footer__plantas .footer__pagos h2 {
+      margin: 1rem;
+      font-size: 2.5em; }
+    .footer__plantas .footer__pagos img {
+      height: 150px;
+      display: block;
+      margin: auto;
+      padding-bottom: 1rem; }
+
+/* Pages */
+/* Inicio Index */
+.body__plantas {
+  height: auto; }
+  .body__plantas .body__carrucel {
+    width: 100%;
+    max-width: 180em;
+    overflow: hidden; }
+    .body__plantas .body__carrucel .imagenes__carrusel {
+      width: 300%;
+      display: flex;
+      flex-flow: row nowrap;
+      justify-content: flex-start;
+      align-items: center;
+      transition: all .5s ease;
+      transform: translate(0%); }
+      .body__plantas .body__carrucel .imagenes__carrusel .carrucel__img {
+        width: calc(100% / 3);
+        height: 55rem;
+        background-size: cover;
+        border-radius: 2%;
+        padding-left: 20rem;
+        padding-right: 20rem;
+        margin-top: 2rem; }
+    .body__plantas .body__carrucel .cambio__carrusel {
+      width: 100%;
+      background-color: #FE929D;
+      padding: 1rem;
+      display: flex;
+      flex-flow: row nowrap;
+      justify-content: center;
+      align-items: center;
+      list-style-type: none; }
+      .body__plantas .body__carrucel .cambio__carrusel .carrucel__punto {
+        width: 3em;
+        height: 3em;
+        margin-bottom: 6em;
+        margin-left: 5em;
+        margin-right: 5em; }
+        .body__plantas .body__carrucel .cambio__carrusel .carrucel__punto img {
+          height: 60px; }
+  .body__plantas .body__pedidos {
+    display: flex;
+    justify-content: space-around; }
+    .body__plantas .body__pedidos .body__descuentos {
+      background-color: #F5D3CA;
+      border-radius: 20px; }
+      .body__plantas .body__pedidos .body__descuentos h2 {
+        font-size: 3em;
+        text-align: center;
+        margin: 2rem; }
+      .body__plantas .body__pedidos .body__descuentos ul {
+        list-style-type: none; }
+        .body__plantas .body__pedidos .body__descuentos ul li {
+          display: inline; }
+          .body__plantas .body__pedidos .body__descuentos ul li img {
+            height: 200px;
+            margin: 1rem;
+            margin-bottom: 5rem;
+            transition: 2s; }
+          .body__plantas .body__pedidos .body__descuentos ul li img:hover {
+            transition: 2s;
+            transform: scale(2); }
+    .body__plantas .body__pedidos .body__top {
+      background-color: #F5D3CA;
+      border-radius: 20px; }
+      .body__plantas .body__pedidos .body__top h2 {
+        font-size: 3em;
+        text-align: center;
+        margin: 2rem; }
+      .body__plantas .body__pedidos .body__top ul {
+        list-style-type: none; }
+        .body__plantas .body__pedidos .body__top ul li {
+          display: inline; }
+          .body__plantas .body__pedidos .body__top ul li img {
+            height: 200px;
+            margin: 1rem;
+            margin-bottom: 5rem;
+            border-radius: 1%;
+            transition: 2s; }
+          .body__plantas .body__pedidos .body__top ul li img:hover {
+            transition: 2s;
+            transform: scale(2); }
+  .body__plantas .quieres__comprar {
+    text-align: center;
+    margin: 5rem;
+    font-size: 2em;
+    background-color: #F5D3CA;
+    border-radius: 20px;
+    margin-left: 40rem;
+    margin-right: 40rem;
+    padding-top: 1rem;
+    padding-bottom: 1rem; }
+    .body__plantas .quieres__comprar .como__titulo {
+      margin: 2rem; }
+    .body__plantas .quieres__comprar .como__parrafo {
+      margin: 2rem;
+      padding-bottom: 0.5rem; }
+
+@media only screen and (max-width: 1024px) {
+  .body__plantas .body__carrucel {
+    width: 100%;
+    max-width: 180em;
+    overflow: hidden; }
+    .body__plantas .body__carrucel .imagenes__carrusel {
+      width: 300%;
+      display: flex;
+      flex-flow: row nowrap;
+      justify-content: flex-start;
+      align-items: center;
+      transition: all .5s ease;
+      transform: translate(0%); }
+      .body__plantas .body__carrucel .imagenes__carrusel .carrucel__img {
+        width: calc(100% / 3);
+        height: 40rem;
+        background-size: cover;
+        border-radius: 2%;
+        padding-left: 20rem;
+        padding-right: 20rem;
+        margin-top: 2rem; }
+    .body__plantas .body__carrucel .cambio__carrusel {
+      width: 100%;
+      background-color: #FE929D;
+      padding: 1rem;
+      display: flex;
+      flex-flow: row nowrap;
+      justify-content: center;
+      align-items: center;
+      list-style-type: none; }
+      .body__plantas .body__carrucel .cambio__carrusel .carrucel__punto {
+        width: 3em;
+        height: 3em;
+        margin-bottom: 6em;
+        margin-left: 5em;
+        margin-right: 5em; }
+        .body__plantas .body__carrucel .cambio__carrusel .carrucel__punto img {
+          height: 55px; }
+  .body__plantas .body__pedidos {
+    display: flex;
+    justify-content: space-around; }
+    .body__plantas .body__pedidos .body__descuentos {
+      background-color: #F5D3CA;
+      border-radius: 20px; }
+      .body__plantas .body__pedidos .body__descuentos h2 {
+        font-size: 2.5em;
+        text-align: center;
+        margin: 2rem; }
+      .body__plantas .body__pedidos .body__descuentos ul {
+        list-style-type: none; }
+        .body__plantas .body__pedidos .body__descuentos ul li {
+          display: inline; }
+          .body__plantas .body__pedidos .body__descuentos ul li img {
+            height: 200px;
+            margin: 1rem;
+            margin-bottom: 5rem;
+            transition: 2s; }
+          .body__plantas .body__pedidos .body__descuentos ul li img:hover {
+            transition: 2s;
+            transform: scale(1.5); }
+    .body__plantas .body__pedidos .body__top {
+      background-color: #F5D3CA;
+      border-radius: 20px; }
+      .body__plantas .body__pedidos .body__top h2 {
+        font-size: 2.5em;
+        text-align: center;
+        margin: 2rem; }
+      .body__plantas .body__pedidos .body__top ul {
+        list-style-type: none; }
+        .body__plantas .body__pedidos .body__top ul li {
+          display: inline; }
+          .body__plantas .body__pedidos .body__top ul li img {
+            height: 200px;
+            margin: 1rem;
+            margin-bottom: 5rem;
+            border-radius: 1%;
+            transition: 2s; }
+          .body__plantas .body__pedidos .body__top ul li img:hover {
+            transition: 2s;
+            transform: scale(1.5); }
+  .body__plantas .quieres__comprar {
+    text-align: center;
+    margin: 5rem;
+    font-size: 2em;
+    background-color: #F5D3CA;
+    border-radius: 20px;
+    margin-left: 30rem;
+    margin-right: 30rem;
+    padding-top: 1rem;
+    padding-bottom: 1rem; }
+    .body__plantas .quieres__comprar .como__titulo {
+      margin: 2rem; }
+    .body__plantas .quieres__comprar .como__parrafo {
+      margin: 2rem;
+      padding-bottom: 0.5rem; } }
+
+/* Inicio Catálogo */
+.body__catalogo {
+  height: auto; }
+  .body__catalogo .body__productos {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 400px; }
+    .body__catalogo .body__productos .productos {
+      margin-left: auto;
+      margin-right: auto;
+      background-color: #F5D3CA;
+      height: 35rem;
+      width: 40rem;
+      border-radius: 20px; }
+      .body__catalogo .body__productos .productos h2 {
+        font-size: 2em;
+        text-align: center;
+        margin: 1rem; }
+      .body__catalogo .body__productos .productos img {
+        height: 200px;
+        display: block;
+        margin: auto; }
+      .body__catalogo .body__productos .productos .precios {
+        display: flex;
+        margin: 3rem; }
+        .body__catalogo .body__productos .productos .precios h3 {
+          font-size: 1.5em;
+          margin: auto; }
+        .body__catalogo .body__productos .productos .precios button {
+          margin: auto;
+          background-color: #64C0B5;
+          font-size: 1.5em;
+          border-radius: 20px;
+          border: none;
+          padding: 1rem; }
+  .body__catalogo .productos__comprados {
+    margin-top: 5rem; }
+    .body__catalogo .productos__comprados .producto__carrito img {
+      height: 120px; }
+    .body__catalogo .productos__comprados .producto__carrito h4 {
+      font-size: 1.5em; }
+    .body__catalogo .productos__comprados .producto__carrito h5 {
+      font-size: 1.5em; }
+  .body__catalogo .pago__productos {
+    display: flex;
+    justify-content: center;
+    margin: 5rem;
+    align-items: center; }
+    .body__catalogo .pago__productos .valor__total__productos {
+      display: flex;
+      margin: 5rem; }
+      .body__catalogo .pago__productos .valor__total__productos h4 {
+        margin: 1rem;
+        font-size: 2em; }
+      .body__catalogo .pago__productos .valor__total__productos p {
+        margin: 1rem;
+        font-size: 2em; }
+    .body__catalogo .pago__productos .botton__compras {
+      display: flex; }
+      .body__catalogo .pago__productos .botton__compras button {
+        font-size: 2em;
+        background-color: #64C0B5;
+        border-radius: 20px;
+        border: none;
+        padding: 2rem; }
+  .body__catalogo .produc__carritos h2 {
+    font-size: 2em;
+    text-align: center;
+    margin: 2rem; }
+  .body__catalogo .elementos__comprados {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 5rem;
+    margin-left: 35rem;
+    margin-right: 35rem;
+    padding: 5rem;
+    background-color: #F5D3CA;
+    border-radius: 20px; }
+    .body__catalogo .elementos__comprados .producto__carrito .titu__plantas {
+      text-align: center;
+      margin: 0.5rem; }
+    .body__catalogo .elementos__comprados .producto__carrito .precio__elemento {
+      text-align: center;
+      margin: 0.5rem; }
+    .body__catalogo .elementos__comprados .producto__carrito img {
+      margin-left: auto;
+      margin-right: auto;
+      display: block; }
+    .body__catalogo .elementos__comprados .cantidadProductos {
+      margin: 5rem;
+      font-size: 1.5em; }
+    .body__catalogo .elementos__comprados .borrar__plantas {
+      font-size: 2em;
+      padding: 2rem;
+      margin: 5rem;
+      background-color: #EE7978;
+      border-radius: 20px;
+      border: none; }
+
+@media only screen and (max-width: 1024px) {
+  .body__catalogo {
+    height: auto; }
+    .body__catalogo .body__productos {
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr;
+      grid-template-rows: 400px; }
+      .body__catalogo .body__productos .productos {
+        margin-left: auto;
+        margin-right: auto;
+        background-color: #F5D3CA;
+        height: 30rem;
+        width: 30rem;
+        border-radius: 20px; }
+        .body__catalogo .body__productos .productos h2 {
+          font-size: 2em;
+          text-align: center;
+          margin: 1rem; }
+        .body__catalogo .body__productos .productos img {
+          height: 150px;
+          display: block;
+          margin: auto; }
+        .body__catalogo .body__productos .productos .precios {
+          display: flex;
+          margin: 3rem; }
+          .body__catalogo .body__productos .productos .precios h3 {
+            font-size: 1.5em;
+            margin: auto; }
+          .body__catalogo .body__productos .productos .precios button {
+            margin: auto;
+            background-color: #64C0B5;
+            font-size: 1.5em;
+            border-radius: 20px;
+            border: none;
+            padding: 1rem; }
+    .body__catalogo .productos__comprados {
+      margin-top: 5rem; }
+      .body__catalogo .productos__comprados .producto__carrito img {
+        height: 120px; }
+      .body__catalogo .productos__comprados .producto__carrito h4 {
+        font-size: 1.5em; }
+      .body__catalogo .productos__comprados .producto__carrito h5 {
+        font-size: 1.5em; }
+    .body__catalogo .pago__productos {
+      display: flex;
+      justify-content: center;
+      margin: 5rem;
+      align-items: center; }
+      .body__catalogo .pago__productos .valor__total__productos {
+        display: flex;
+        margin: 5rem; }
+        .body__catalogo .pago__productos .valor__total__productos h4 {
+          margin: 1rem;
+          font-size: 2em; }
+        .body__catalogo .pago__productos .valor__total__productos p {
+          margin: 1rem;
+          font-size: 2em; }
+      .body__catalogo .pago__productos .botton__compras {
+        display: flex; }
+        .body__catalogo .pago__productos .botton__compras button {
+          font-size: 2em;
+          background-color: #64C0B5;
+          border-radius: 20px;
+          border: none;
+          padding: 2rem; }
+    .body__catalogo .elementos__comprados {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin: 3rem;
+      margin-left: 15rem;
+      margin-right: 15rem;
+      padding: 5rem;
+      background-color: #F5D3CA;
+      border-radius: 20px; }
+      .body__catalogo .elementos__comprados .producto__carrito .titu__plantas {
+        text-align: center;
+        margin: 0.5rem; }
+      .body__catalogo .elementos__comprados .producto__carrito .precio__elemento {
+        text-align: center;
+        margin: 0.5rem; }
+      .body__catalogo .elementos__comprados .producto__carrito img {
+        margin-left: auto;
+        margin-right: auto;
+        display: block; }
+      .body__catalogo .elementos__comprados .cantidadProductos {
+        margin: 5rem;
+        font-size: 1.5em; }
+      .body__catalogo .elementos__comprados .borrar__plantas {
+        font-size: 2em;
+        padding: 2rem;
+        margin: 5rem;
+        background-color: #EE7978;
+        border-radius: 20px;
+        border: none; } }
+
+/* Inicio somos */
+.plantas__somos {
+  height: auto; }
+  .plantas__somos .biografia__plantas {
+    background-color: #64C0B5;
+    border-radius: 20px;
+    padding: 1rem;
+    margin: 1rem; }
+    .plantas__somos .biografia__plantas h1 {
+      text-align: center;
+      font-size: 2em;
+      margin: 1rem; }
+    .plantas__somos .biografia__plantas p {
+      font-size: 1.5em;
+      text-align: center;
+      margin: 1rem; }
+    .plantas__somos .biografia__plantas .plantas__collage {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+      grid-gap: 1em; }
+      .plantas__somos .biografia__plantas .plantas__collage img {
+        width: 100%;
+        height: auto; }
+  .plantas__somos .plantas__objetivos {
+    display: flex;
+    justify-content: space-around; }
+    .plantas__somos .plantas__objetivos .plantas__mision {
+      background-color: #F5D3CA;
+      border-radius: 20px;
+      margin: 1rem; }
+      .plantas__somos .plantas__objetivos .plantas__mision h2 {
+        font-size: 2em;
+        text-align: center;
+        margin: 2rem; }
+      .plantas__somos .plantas__objetivos .plantas__mision p {
+        font-size: 1.5em;
+        text-align: center;
+        margin: 1rem; }
+    .plantas__somos .plantas__objetivos .plantas__vision {
+      background-color: #F5D3CA;
+      border-radius: 20px;
+      margin: 1rem; }
+      .plantas__somos .plantas__objetivos .plantas__vision h2 {
+        font-size: 2em;
+        text-align: center;
+        margin: 2rem; }
+      .plantas__somos .plantas__objetivos .plantas__vision p {
+        font-size: 1.5em;
+        text-align: center;
+        margin: 1rem; }
+
+@media only screen and (max-width: 1024px) {
+  .plantas__somos {
+    height: auto; }
+    .plantas__somos .biografia__plantas {
+      background-color: #64C0B5;
+      border-radius: 20px;
+      padding: 1rem;
+      margin: 1rem; }
+      .plantas__somos .biografia__plantas h1 {
+        text-align: center;
+        font-size: 2em;
+        margin: 1rem; }
+      .plantas__somos .biografia__plantas p {
+        font-size: 1.5em;
+        text-align: center;
+        margin: 1rem; }
+      .plantas__somos .biografia__plantas .plantas__collage {
+        display: grid;
+        grid-template-columns: repeat(auto-fill, minmax(230px, 1fr));
+        grid-gap: 1em; }
+        .plantas__somos .biografia__plantas .plantas__collage img {
+          width: 100%;
+          height: auto; } }
+
+/* inicio contacto */
+.plantas__contacto {
+  padding: 3rem;
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  height: auto; }
+  .plantas__contacto .contactob {
+    text-align: left;
+    background-color: #F5D3CA;
+    border-radius: 20px; }
+    .plantas__contacto .contactob h2 {
+      font-size: 2em;
+      text-align: center;
+      margin: 2rem; }
+    .plantas__contacto .contactob li {
+      list-style-type: none;
+      margin: 6rem;
+      font-size: 2em;
+      color: black;
+      text-align: center; }
+    .plantas__contacto .contactob a {
+      color: black; }
+  .plantas__contacto .formulario__contacto {
+    background-color: #F5D3CA;
+    border-radius: 20px;
+    margin-left: 1rem; }
+    .plantas__contacto .formulario__contacto h2 {
+      text-align: center;
+      font-size: 2em;
+      padding: 0%;
+      padding-bottom: 5rem;
+      margin: 2rem; }
+    .plantas__contacto .formulario__contacto form {
+      color: black;
+      font-size: 2em; }
+    .plantas__contacto .formulario__contacto .form1 {
+      padding: 0.5rem;
+      text-align: center; }
+      .plantas__contacto .formulario__contacto .form1 .text__plantas {
+        align-items: top; }
+      .plantas__contacto .formulario__contacto .form1 .enviar__plantas {
+        background-color: #64C0B5;
+        border-radius: 20px;
+        border: none;
+        padding: 0.8rem; }
+      .plantas__contacto .formulario__contacto .form1 .reset__plantas {
+        background-color: #EE7978;
+        border-radius: 20px;
+        border: none;
+        padding: 0.8rem; }
+
+@media only screen and (max-width: 1024px) {
+  .plantas__contacto {
+    padding: 3rem;
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    height: auto; }
+    .plantas__contacto .contactob {
+      text-align: left;
+      background-color: #F5D3CA;
+      border-radius: 20px; }
+      .plantas__contacto .contactob h2 {
+        font-size: 2em;
+        text-align: center;
+        margin: 2rem; }
+      .plantas__contacto .contactob li {
+        list-style-type: none;
+        margin: 6rem;
+        font-size: 1.8em;
+        color: black;
+        text-align: center; }
+      .plantas__contacto .contactob a {
+        color: black; }
+    .plantas__contacto .formulario__contacto {
+      background-color: #F5D3CA;
+      border-radius: 20px;
+      margin-left: 1rem; }
+      .plantas__contacto .formulario__contacto h2 {
+        text-align: center;
+        font-size: 2em;
+        padding: 0%;
+        padding-bottom: 5rem;
+        margin: 2rem; }
+      .plantas__contacto .formulario__contacto form {
+        color: black;
+        font-size: 1.8em; }
+      .plantas__contacto .formulario__contacto .form1 {
+        padding: 1rem;
+        text-align: center; } }

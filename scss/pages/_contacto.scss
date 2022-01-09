@@ -1,0 +1,177 @@
+/* inicio contacto */
+
+.plantas__contacto {
+       
+    padding: 3rem;
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    height: auto;
+
+    .contactob {
+
+        text-align: left;
+        background-color: #F5D3CA;
+        border-radius: 20px;
+    
+            h2 {
+                
+                font-size: 2em;
+                text-align: center;
+                margin: 2rem;
+    
+            }
+
+            li {
+                    
+                list-style-type: none;
+                margin: 6rem;
+                font-size: 2em;
+                color: black;
+                text-align: center;
+                          
+            }
+            
+            a {
+            
+                color: black;
+                
+            }
+                
+    }
+
+    .formulario__contacto {
+
+        background-color: #F5D3CA;
+        border-radius: 20px;
+        margin-left: 1rem;
+      
+            h2 {
+                
+                text-align: center;
+                font-size: 2em;
+                padding: 0%;
+                padding-bottom: 5rem;
+                margin: 2rem;
+            
+            }
+        
+            form {
+                
+                color: black;
+                font-size: 2em;
+                
+            }
+        
+            .form1 {
+        
+                padding: 0.5rem;
+                text-align: center;
+
+                .text__plantas {
+
+                    align-items: top;
+
+                }
+
+                .enviar__plantas {
+
+                    background-color: #64C0B5;
+                    border-radius: 20px;
+                    border: none;
+                    padding: 0.8rem;
+
+                }
+
+                .reset__plantas {
+
+                    background-color: #EE7978;
+                    border-radius: 20px;
+                    border: none;
+                    padding: 0.8rem;
+
+                }
+            
+            }
+            
+    
+    }
+   
+}
+
+@media only screen and (max-width:1024px) {
+
+.plantas__contacto {
+       
+    padding: 3rem;
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    height: auto;
+
+    .contactob {
+
+        text-align: left;
+        background-color: #F5D3CA;
+        border-radius: 20px;
+    
+            h2 {
+                
+                font-size: 2em;
+                text-align: center;
+                margin: 2rem;
+    
+            }
+
+            li {
+                    
+                list-style-type: none;
+                margin: 6rem;
+                font-size: 1.8em;
+                color: black;
+                text-align: center;
+                          
+            }
+            
+            a {
+            
+                color: black;
+                
+            }
+                
+    }
+
+    .formulario__contacto {
+
+        background-color: #F5D3CA;
+        border-radius: 20px;
+        margin-left: 1rem;
+      
+            h2 {
+                
+                text-align: center;
+                font-size: 2em;
+                padding: 0%;
+                padding-bottom: 5rem;
+                margin: 2rem;
+            
+            }
+        
+            form {
+                
+                color: black;
+                font-size: 1.8em;
+                
+            }
+        
+            .form1 {
+        
+                padding: 1rem;
+                text-align: center;
+            
+            }
+            
+    
+    }
+   
+}
+
+}

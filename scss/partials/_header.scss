@@ -1,0 +1,188 @@
+/* Inicio header */
+
+.header__plantas {
+
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin: 1rem;
+    margin-bottom: 5rem;
+
+    .header__logo {
+
+        img {
+
+            height: 150px;
+
+
+        }
+
+
+    }
+
+    .header__navegacion {
+
+        display: flex;
+        align-items: center;
+    
+        ul {
+    
+            list-style-type: none;
+    
+        }
+
+        li {
+
+            display: inline;
+            margin: 2rem;
+
+        }
+
+        a {
+
+            text-decoration: none;
+            border-radius: 1%;
+            font-size: 2.5em;
+            padding: 3rem;
+
+        }
+
+        .header__somos {
+
+            color: black;
+            background-color: #64C0B5;
+            border-radius: 20px;
+
+        }
+
+        .header__catalogo {
+
+            color: black;
+            background-color: #EE7978;
+            border-radius: 20px;
+
+        }
+
+        .header__carrito {
+
+            color: black;
+            background-color: #F5D3CA;
+            border-radius: 20px;
+
+        }
+    
+    }
+
+    .header__redes {
+
+        a {
+
+            img {
+
+                height: 35px;
+                width: 35px;
+                margin-left: 2rem;
+
+            }
+
+        }
+
+    }
+
+}
+
+@media only screen and (max-width:1024px) {
+
+.header__plantas {
+
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin: 1rem;
+    margin-bottom: 5rem;
+
+    .header__logo {
+
+        img {
+
+            height: 120px;
+
+
+        }
+
+
+    }
+
+    .header__navegacion {
+
+        display: flex;
+        align-items: center;
+    
+        ul {
+    
+            list-style-type: none;
+    
+        }
+
+        li {
+
+            display: inline;
+            margin: 0.5rem;
+
+        }
+
+        a {
+
+            text-decoration: none;
+            border-radius: 20px;
+            font-size: 2em;
+            padding: 2rem;
+
+        }
+
+        .header__somos {
+
+            color: black;
+            background-color: #64C0B5;
+            border-radius: 20px;
+
+        }
+
+        .header__catalogo {
+
+            color: black;
+            background-color: #EE7978;
+            border-radius: 20px;
+
+        }
+
+        .header__carrito {
+
+            color: black;
+            background-color: #F5D3CA;
+            border-radius: 20px;
+
+        }
+    
+    }
+
+    .header__redes {
+
+        a {
+
+            img {
+
+                height: 30px;
+                width: 30px;
+                margin-left: 2rem;
+
+            }
+
+        }
+
+    }
+
+}
+
+
+}

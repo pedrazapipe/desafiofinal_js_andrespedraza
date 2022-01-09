@@ -1,0 +1,90 @@
+.footer__plantas {
+
+    display: flex;
+    justify-content: space-around;
+
+    .footer__info {
+
+        background-color: #EE7978;
+        border-radius: 20px;
+        margin: 1rem;
+
+        h2 {
+
+            margin: 1rem;
+            font-size: 2.5em;
+
+        }
+
+        ul {
+
+            list-style-type: none;
+            text-align: center;
+
+            li {
+
+                margin: 0.5rem;
+                font-size: 2em;
+
+            }
+
+        }
+
+    }
+
+    .footer__contacto {
+
+        background-color: #F5D3CA;
+        border-radius: 20px;
+        margin: 1rem;
+
+        h2 {
+    
+            margin: 1rem;
+            font-size: 2.5em;
+    
+        }
+    
+        ul {
+    
+            list-style-type: none;
+            text-align: center;
+    
+        li {
+    
+            margin: 0.5rem;
+            font-size: 2em;
+    
+        }
+    
+    }
+    
+    }
+
+    .footer__pagos {
+
+        background-color: #64C0B5;
+        border-radius: 20px;
+        margin: 1rem;
+
+        h2 {
+
+            margin: 1rem;
+            font-size: 2.5em;
+
+        }
+
+        img {
+
+            height: 150px;
+            display: block;
+            margin: auto;
+            padding-bottom: 1rem;
+
+        }
+
+    }
+    
+
+}
+

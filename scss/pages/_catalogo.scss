@@ -1,0 +1,432 @@
+/* Inicio Catálogo */
+
+.body__catalogo {
+
+    height: auto;
+
+    .body__productos {
+
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: 400px;
+
+        .productos {
+
+            margin-left: auto;  
+            margin-right: auto;
+            background-color: #F5D3CA;
+            height: 35rem;
+            width: 40rem;
+            border-radius: 20px;
+
+            h2 {
+
+                font-size: 2em;
+                text-align: center;
+                margin: 1rem;
+
+            }
+
+            img { 
+
+                height: 200px;
+                display: block;
+                margin: auto;
+                        
+            }
+
+            .precios {
+
+                display: flex;
+                margin: 3rem;
+
+                h3 {
+
+                    font-size: 1.5em;
+                    margin: auto;
+
+                }
+
+                button {
+
+                    margin: auto;
+                    background-color: #64C0B5;
+                    font-size: 1.5em;
+                    border-radius: 20px;
+                    border: none;
+                    padding: 1rem;
+
+                }
+
+            }
+
+
+        }
+
+
+    }
+
+    .productos__comprados {
+
+        margin-top: 5rem;
+
+        .producto__carrito {
+
+            img {
+
+                height: 120px;
+
+            }
+
+            h4 {
+
+                font-size: 1.5em;
+
+            }
+
+            h5 {
+
+                font-size: 1.5em;
+
+            }
+
+        }
+
+    }
+
+    .pago__productos {
+        
+        display: flex;
+        justify-content: center;
+        margin: 5rem;
+        align-items: center;
+
+        .valor__total__productos {
+
+            display: flex;
+            margin: 5rem;
+
+            h4 {
+
+                margin: 1rem;
+                font-size: 2em;
+    
+            }
+    
+            p {
+    
+                margin: 1rem;
+                font-size: 2em;
+    
+            }
+
+        }
+
+       .botton__compras {
+
+           display: flex;
+
+            button {
+
+                font-size: 2em;
+                background-color: #64C0B5;
+                border-radius: 20px;
+                border: none;
+                padding: 2rem;
+
+            }
+
+       }
+
+    }
+
+    .produc__carritos {
+
+        h2 {
+
+            font-size: 2em;
+            text-align: center;
+            margin: 2rem;
+
+        }
+
+    }
+
+
+    .elementos__comprados {
+
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: 5rem;
+        margin-left: 35rem;
+        margin-right: 35rem;
+        padding: 5rem;
+        background-color: #F5D3CA;
+        border-radius: 20px;
+
+
+        .producto__carrito {
+
+
+            .titu__plantas {
+
+                text-align: center;
+                margin: 0.5rem;
+
+            }
+
+            .precio__elemento {
+
+                text-align: center;
+                margin: 0.5rem;
+
+
+            }
+
+            img {
+
+                margin-left: auto;
+                margin-right: auto;
+                display: block;
+
+            }
+
+        }
+
+
+        .cantidadProductos {
+
+            margin: 5rem;
+            font-size: 1.5em;
+
+        }
+
+        .borrar__plantas {
+            
+            font-size: 2em;
+            padding: 2rem;
+            margin: 5rem;
+            background-color: #EE7978;
+            border-radius: 20px;
+            border: none;
+
+        }
+        
+    }
+
+
+}
+
+@media only screen and (max-width:1024px) {
+
+.body__catalogo {
+
+    height: auto;
+
+    .body__productos {
+
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: 400px;
+
+        .productos {
+
+            margin-left: auto;  
+            margin-right: auto;
+            background-color: #F5D3CA;
+            height: 30rem;
+            width: 30rem;
+            border-radius: 20px;
+
+            h2 {
+
+                font-size: 2em;
+                text-align: center;
+                margin: 1rem;
+
+            }
+
+            img { 
+
+                height: 150px;
+                display: block;
+                margin: auto;
+                        
+            }
+
+            .precios {
+
+                display: flex;
+                margin: 3rem;
+
+                h3 {
+
+                    font-size: 1.5em;
+                    margin: auto;
+
+                }
+
+                button {
+
+                    margin: auto;
+                    background-color: #64C0B5;
+                    font-size: 1.5em;
+                    border-radius: 20px;
+                    border: none;
+                    padding: 1rem;
+
+                }
+
+            }
+
+
+        }
+
+
+    }
+
+    .productos__comprados {
+
+        margin-top: 5rem;
+
+        .producto__carrito {
+
+            img {
+
+                height: 120px;
+
+            }
+
+            h4 {
+
+                font-size: 1.5em;
+
+            }
+
+            h5 {
+
+                font-size: 1.5em;
+
+            }
+
+        }
+
+    }
+
+    .pago__productos {
+        
+        display: flex;
+        justify-content: center;
+        margin: 5rem;
+        align-items: center;
+
+        .valor__total__productos {
+
+            display: flex;
+            margin: 5rem;
+
+            h4 {
+
+                margin: 1rem;
+                font-size: 2em;
+    
+            }
+    
+            p {
+    
+                margin: 1rem;
+                font-size: 2em;
+    
+            }
+
+        }
+
+       .botton__compras {
+
+           display: flex;
+
+            button {
+
+                font-size: 2em;
+                background-color: #64C0B5;
+                border-radius: 20px;
+                border: none;
+                padding: 2rem;
+
+            }
+
+       }
+
+
+
+
+    }
+
+
+    .elementos__comprados {
+
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: 3rem;
+        margin-left: 15rem;
+        margin-right: 15rem;
+        padding: 5rem;
+        background-color: #F5D3CA;
+        border-radius: 20px;
+
+
+        .producto__carrito {
+
+
+            .titu__plantas {
+
+                text-align: center;
+                margin: 0.5rem;
+
+            }
+
+            .precio__elemento {
+
+                text-align: center;
+                margin: 0.5rem;
+
+
+            }
+
+            img {
+
+                margin-left: auto;
+                margin-right: auto;
+                display: block;
+
+            }
+
+        }
+
+
+        .cantidadProductos {
+
+            margin: 5rem;
+            font-size: 1.5em;
+
+        }
+
+        .borrar__plantas {
+            
+            font-size: 2em;
+            padding: 2rem;
+            margin: 5rem;
+            background-color: #EE7978;
+            border-radius: 20px;
+            border: none;
+
+        }
+        
+    }
+
+
+}   
+
+}
